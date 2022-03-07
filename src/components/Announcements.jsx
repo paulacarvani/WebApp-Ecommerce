@@ -13,7 +13,7 @@ const Container = styled.div`
 
 const Announcements = () => {
   return (
-    <Container> A project by APSS - Holberton School Colombia</Container>
+    <Container> A project by Paula Carvani</Container>
   )
 }
 

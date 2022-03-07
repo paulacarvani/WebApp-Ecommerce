@@ -31,6 +31,7 @@ const Arrow = styled.div`
 `;
 
 const Wrapper = styled.div `
+    padding-left: 50px;
     height: 50%;
     display: flex;
     transform: translateX(${props=>props.slideIndex * -100}vw);
@@ -59,7 +60,7 @@ const InfoContainer =styled.div`
 `;
 
 const Title = styled.h1`
-    font-size: 70px;
+    font-size: 60px;
 `;
 
 const Desc = styled.p`
@@ -93,7 +94,7 @@ const Slider = () => {
             </Arrow>
             <Wrapper slideIndex={slideIndex}>
                 {sliderItems.map((item) => (
-                    <Slide>
+                    <Slide bg={item.bg} key={item.id}>
                         <ImgContainer>
                             <Image src={item.img} />
                         </ImgContainer>

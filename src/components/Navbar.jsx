@@ -1,10 +1,9 @@
-import { Search, ShoppingCartOutlined } from '@mui/icons-material';
-import { Badge } from '@mui/material';
+import { FacebookOutlined, Instagram, Search, WhatsappOutlined } from '@mui/icons-material';
 import React from 'react'
 import styled from 'styled-components'
 
 const Container = styled.div`
-    height = 60px;
+    height: 60px;
 `;
 
 const Wrapper =styled.div`
@@ -62,7 +61,7 @@ const MenuItem = styled.div`
 `;
 
 const Navbar = () => {
-  return (
+    return (
     <Container>
         <Wrapper>
             <Left>
@@ -73,20 +72,22 @@ const Navbar = () => {
                 </SearchContainer>
             </Left>
             <Center>
-                <Logo>BURBULETAS</Logo>
+                <Logo>ARTE PARA LUCIR CARVANI</Logo>
             </Center>
             <Right>
-                <MenuItem>REGISTER</MenuItem>
-                <MenuItem>SIGN IN</MenuItem>
                 <MenuItem>
-                    <Badge badgeContent={4} color="primary">
-                        <ShoppingCartOutlined />
-                    </Badge>
+                <FacebookOutlined/>
+                </MenuItem>
+                <MenuItem>
+                <Instagram/>
+                </MenuItem>
+                <MenuItem>
+                <WhatsappOutlined/>
                 </MenuItem>
             </Right>
         </Wrapper>
     </Container>
-  )
+    )
 }
 
 export default Navbar
